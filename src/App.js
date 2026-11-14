@@ -5,6 +5,7 @@ import NavMenu from './components/NavMenu';
 import Home from './components/Home';
 import About from './components/About';
 import Articles from './components/Articles';
+import Article from './components/Article';
 import { Route, Routes, NavLink } from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                     <Route index                element={ <Home /> }         />
                     <Route path="/about"        element={ <About /> }        />
                     <Route path="/articles"     element={ <Articles /> }     />
+                    <Route path="/article/:id"  element={ <Article /> }     />
               </Route>
           </Routes>
 
